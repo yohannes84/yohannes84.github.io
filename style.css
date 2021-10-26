@@ -20,7 +20,7 @@ ul{
 #container{
 	background: #333;
 	width: 960px;
-	margin:30px auto;
+	margin:25px auto;
 	overflow: hidden;
 	padding: 10px;
 }
@@ -50,6 +50,13 @@ ul{
 	width: 60%;
 
 }
+#main1{
+	padding-left: 10px;
+	float:left;
+	width: 30%;
+
+}
+
 #sidebar{
 	float: right;
 	width: 30%;
