@@ -1,0 +1,12 @@
+
+
+#banner {
+    background-image: url(/images2/bannerbg.png);
+    background-repeat: repeat-x;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("/images2/background.png");
+  }
