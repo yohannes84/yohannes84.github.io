@@ -9,6 +9,35 @@ a{
 	text-decoration: none;
 
 }
+
+.row {
+	display: flex;
+  }
+  
+.column {
+	flex: 70.33%;
+	padding: 5px;
+  }
+
+.column img {
+  width: 350px;
+  height: 150px;
+  
+  
+}
+
+a:hover {
+	text-decoration:underline;
+ }
+
+#p1:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
+
 ul{
 	padding: 0;
 
@@ -53,7 +82,31 @@ ul{
 #main1{
 	padding-left: 10px;
 	float:left;
-	width: 30%;
+	width: 60%;
+
+}
+
+
+#movies{
+	
+	float:left;
+	width: 60%;
+	flex-direction: row-reverse;
+
+}
+
+#mood{
+	
+	float:left;
+	width: 60%;
+	
+
+}
+
+#fun{
+	padding-left: 10px;
+	float:left;
+	width: 60%;
 
 }
 
@@ -102,4 +155,13 @@ input,textarea{
 	width: 100%;
 	padding:5px;
 	margin-bottom: 15px;
+}
+#validator{
+    display: flex;
+	
+}
+
+#validator img {
+
+	justify-content: center;
 }
