@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+
+        div{
+           
+           font-family: Arial;
+           font-weight: 5px;
+        }
+
+        fieldset{
+            background-color: mediumpurple;
+            width: fit-content;
+        }
+
+        legend {
+            background-color:whitesmoke;
+           
+            padding: 5px 10px;
+                }
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+    
+         #entry label {
+          
+            width: 100px; display: inline;
+        }
+
+        input[type="radio"]{
+            border: 1px solid #e2e2e2;
+            background: #fff;
+            color: #333;
+            font-size: 1.2em;
+            margin: 5px 0 6px 0;
+            padding: 5px;
+            width: 14px;
+            }
+
+
+              
+
+    </style>
+  
+</head>
+<body>
+
+    <div id="main">
+        <h1>nerdLuv</h1>
+        <form action="http://mumstudents.org/params.php">
+            <fieldset>
+            <legend>New User Signup :</legend>
+            <div>
+                <label> Name</label>
+                <input type="text" name="name" maxlength="16"> <br>
+            </div>
+            <br>
+            <div id="entry">
+                <label>Gender: </label>
+                <label for="male">Male</label>
+                <input type="radio" name="Entry" value="Male" id= "male" >
+                <label for="female">Female</label>
+                <input type="radio" name="Entry" value="Female" id= "female" checked> <br>
+               
+             </div>
+             <br>
+
+            <div>
+                <label> Age</label> 
+                <input type="text" name="email" maxlength="2" size="6" pattern = "\d">
+            </div>
+            <br>
+            <div>
+                <label > <a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">Personality Type:</a></label>
+                <input type="text" name="email" maxlength="4" size="6">
+            </div>
+            <br>
+            <div>
+                <label>Favorite OS:</label>
+                <select name = "FavoriteOs">
+                    <option value="About Me" selected>Windows</option>
+                    <option value="Recipe">Mac OS X</option>
+                    <option value="Moview Review">Linux</option> 
+                </select>
+                <br>
+            </div>
+            <br>
+            <div>
+                <label>Seeking Age:</label>
+                <input type="text" name="name" maxlength="2" placeholder="min" size="6">
+                 to
+                 <input type="text" name="name" maxlength="2" placeholder="max" size="6">
+                
+            </div>
+            <br>
+            <button type="submit">Sign Up</button>
+        </fieldset>
+
+        </form>
+
+        <a class="active" href="index.html"> Back to the Front Page</a>
+        <br>
+        <br>
+    
+        <div id="validator">
+			
+            <a href="https://validator.w3.org/check/referer"><img src="w3c-html.png" alt="w3c validator"/></a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="w3c-css.png" alt="w3 validator" /></a>
+        </div>
+    
+</body>
+
+
+</html>
