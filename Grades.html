@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grades | Retrive Grades</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a  href="index.html"> Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="assignments.html">Labs</a></li>
+				<li><a class="active" href="contactus.html">Contact</a></li>
+
+			</ul>
+				
+			
+		</div>
+		<div id="main">
+			<h1>Retrive Your Grade</h1>
+			<form action="http://mumstudents.org/params.php">
+                <fieldset>
+                <legend> Student Info</legend>
+				<div>
+					<label> Name</label><br>
+					<input type="text" name="name">
+				</div>
+				<div>
+					<label> Student ID</label><br>
+					<input type="text" name="email">
+				</div>
+				<div>
+					<label>Assignment</label><br>
+					<select name = "assignment">
+                        <option value="About Me">About Me</option>
+                        <option value="Recipe">Recipe</option>
+                        <option value="Moview Review">Movie Review</option>
+                    </select>
+				</div>
+            </fieldset>
+
+            <fieldset>
+
+            <legend>Entry</legend>
+                <div id="entry" style="display: flex;">
+                    <label for="html">August</label>
+                    <input style ="width:auto" type="radio" name="Entry" value="August" style="margin-left:auto 0">
+                    <label for="html">May</label>
+                    <input style ="width:auto" type="radio" name="Entry" value="May" style="margin-left: 0" checked> 
+                   
+                 </div>
+            </fieldset>
+				<br>
+				<button type="submit">Get Grade</button>
+			</form>
+		
+			
+		</div>
+		<div id="sidebar">
+			<h3>Sidebar</h3>
+
+			<p>Nulla in metus non ex fringilla scelerisque vitae sit amet risus. Nunc luctus ligula a dictum aliquet. Aenean ac aliquam quam, a ornare nisl. Duis eu lacus urna. In sit amet rutrum felis. Duis quis dui non ligula cursus rutrum. Fusce commodo lorem sed nibh elementum faucibus. </p>
+			
+		</div>
+
+		<div class="clr"></div>
+
+		<div id="footer">
+			<p>Copyright &copy; 2021 </p>
+		</div>
+	</div>
+</body>
+</html> 
