@@ -41,7 +41,6 @@ h1{
     float:right;
     background-color: #A2B964;
     overflow: hidden;
-    font-weight: 8px;
     font-family:Arial,sans-serif;
     border-radius: 0px 15px 0px 0px;
  
@@ -98,7 +97,6 @@ ul{
     font-size: 48px;
     font-weight: bold;
     color: red;
-    padding:0,0,0,0;
     height: 83px;
     background-size: auto 83px;
     border-radius: 15px 0px 0px 0px;
