@@ -1,0 +1,43 @@
+.container{
+
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+fieldset{
+    display: inline-block;
+    border: 5px solid black;
+ }
+
+#text{
+   
+    width: 90%;
+    height: 400px;
+    font-family: monospace;
+    font-size: 12pt;
+    font-weight: bold;
+    
+    }
+
+body{
+    background-color: #CCCCFF;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+header{
+    font-size: 32px;
+    text-align: center;
+}
+
+#validate{
+    right:0px;
+    position: fixed;
+}
+
+#validate img{
+    width:88px;
+    height: 31px;
+
+}

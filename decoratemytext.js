@@ -44,7 +44,7 @@ function checkLatinPigWord(str)
     }
 }
 
-document.getElementById("bling").onchange= function decorateByCheckbox(){ // Jquery checking for detecting weather checkbox checked or not 
+document.getElementById("bling").onchange = function decorateByCheckbox(){ // Jquery checking for detecting weather checkbox checked or not 
 
    if ($("#bling").prop("checked")){
 

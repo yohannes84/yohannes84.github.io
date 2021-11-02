@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="animations.js"></script>
+    <script src="ascii.js"></script>
+    <link href="css/ascii.css" type="text/css" rel="stylesheet" />
+    <title>ASCIIMation</title>
+</head>
+<body>
+<header>CSE472: ASCII Animation Viewer</header>
+<div class="container">
+	<textarea id="text" cols="80" rows="20"></textarea>
+	<br>
+	<fieldset>
+		<legend>Play Controls:</legend>
+		<button id="start" disabled >Start</button>
+		<button disabled="disabled" id="stop">Stop</button>
+	</fieldset>
+
+	<fieldset>
+		<legend>Animation:</legend>
+		<select id="animation">
+			<option selected="selected" value="Blank">Blank</option>
+			<option value="Exercise">Exercise</option>
+			<option value="Juggler">Juggler</option>
+			<option value="Bike">Bike</option>
+			<option value="Dive">Dive</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<legend>Size:</legend>
+		<select id="fontOps">
+			<option id='tiny' value='7'>Tiny</option>
+			<option id='small' value='10'>Small</option>
+			<option id='medium' value='12' selected="selected">Medium</option>
+			<option id='large' value='16'>Large</option>
+			<option id='extralarge' value='24'>Extra Large</option>
+			<option id='xxl' value='32'>XXL</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<legend>Speed:</legend>
+		<label><input id="turbo" type="checkbox">Turbo</label>
+	</fieldset>
+    </div>
+    <div id="validate">
+        <a href="http://validator.w3.org/check?uri=https://yohannes84.github.io/ascii.html"><img src="w3c-html.png" alt="w3c validator"/></a>
+            
+        </a><br>
+        <a href="https://jigsaw.w3.org/css-validator/check?uri=https://yohannes84.github.io/ascii.css">
+            <img src="w3c-css.png" class="checkImgs" alt="Valid CSS!"></a><br>
+        <a href="http://webster.cs.washington.edu/jslint?referer=https://yohannes84.github.io/animation.js">
+            <img src="jslint.png" class="checkImgs" alt="JavaScript Lint">
+        </a>
+    
+    
+    </div>
+    
+</body>
+</html>
