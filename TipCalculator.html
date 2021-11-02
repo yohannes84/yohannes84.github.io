@@ -15,7 +15,7 @@
 
 			var tipamount= document.getElementById("tip").value;
 
-			gtotal = gtotal - (gtotal * (tipamount/100));
+			gtotal = Number(gtotal) + Number((gtotal * (tipamount/100)));
 			
 			document.getElementById("total").innerHTML = gtotal;
 
