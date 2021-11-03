@@ -13,7 +13,7 @@ window.onload = function () {
         document.getElementById("animation").disabled = true;
         var txtVal = document.getElementById("text");
         let frameNo = 0;
-        frame = ANIMATIONS[animtyp].split("=====");
+        frame = ANIMATIONS[animtyp].split("=====\n");
         txtVal.value = frame[frameNo];
         intervalID = setInterval(function () {
             if (frameNo < frame.length) {
