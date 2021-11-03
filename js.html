@@ -34,6 +34,42 @@
        // all CSS in a separate file and eschewing the use of style attributes 
        // or other such presentational markup, 
        // we should also separate our HTML structure and JavaScript behaviour . 
+
+        x = 1; 
+        var a = 5; 
+        var b = 10;
+        var c = function(a, b, c) { 
+                    var x = 10; 
+                    console.log(x); 
+                    console.log(a); 
+                    var f = function(a, b, c) 
+                    { 
+                        b = a; 
+                        console.log(b); 
+                        b = c; 
+                        var x = 5; 
+                    } 
+                    f(a,b,c); 
+                    console.log(b);
+        } 
+        c(8,9,10); 
+        console.log(b); 
+        console.log(x); 
+
+        function product ()
+        {
+            var i;
+            var totalProdct = 1;
+            for(i = 0; i <arguments.length; i++)
+                totalProdct = totalProdct * arguments[i];
+            
+            return totalProdct;
+
+        }
+
+        console.log(product(4,6,6,7,5));
+        console.log(product(4,7,5));
+
     </script>
 
     
