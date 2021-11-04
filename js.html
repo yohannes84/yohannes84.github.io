@@ -70,6 +70,212 @@
         console.log(product(4,6,6,7,5));
         console.log(product(4,7,5));
 
+        var count  = (function() {
+            var counter = 2;
+            var add = function() {
+            return counter += 1;
+            }
+            var reset = function(){
+            return counter;
+            }
+             
+
+            return{
+                add:add
+            }
+
+          
+
+            
+        })();
+
+        
+        console.log(count.add());
+        
+        //console.log(counter.reset1());
+
+        function make_adder(inc){
+            var counter = 0;
+            var add = function() {
+            return counter += inc;
+            }
+
+            return add;
+        }
+
+        add5 = make_adder(5);
+        console.log(add5( )); console.log(add5( ));  console.log(add5( ));  // final counter value is 15
+        add7 = make_adder(7);
+        console.log( add7()); console.log( add7()); console.log( add7()); // final counter value is 21
+
+        var Employee = function(){
+
+            var name;//private field
+            var  age;//private field
+            var salary;//private field
+
+            //public method
+            function setAge(newAge){
+                age = newAge;
+            }
+            //public method
+            function setSalary(newSalary){
+                salary = newSalary;
+            }
+            //public method
+            function setName(newName)
+            {
+                name - newName;
+            }
+            //private method
+            function getAge( )
+            {
+                return age;
+            }
+            //priavte method
+            function getSalary()
+            {
+                return salary;
+            }
+            //private method
+            function getName(){
+                return salary;
+            }
+            //public method
+            function increaseSalary(percentage)
+            {
+                return getSalary + (getSalary * percentage);
+            }
+
+             // uses private getSalary( )
+             //public method
+            function  incrementAge( ){
+
+                return getAge()+=1;
+                
+            } // uses private getAge(
+
+            return {
+                setAge:setAge,
+                setName:setName,
+                setSalary:setSalary,
+                increaseSalary:increaseSalary,
+                incrementAge:incrementAge
+            }
+
+            //another variation of retrunign public method 
+
+            return {
+                setAge : function(newAge){
+                    age = newAge;
+                },
+                setName : function(newName){
+                    name = newName;
+                },
+                setSalary : function(newSalary){
+                    age = newAge;
+                },
+
+                increaseSalary: function(percentage)
+                {
+                return getSalary + (getSalary * percentage);
+                },
+
+                // uses private getSalary( )
+                //public method
+                incrementAge: function  ( ){
+
+                    return getAge()+=1;
+                    
+                } // uses private getAge(
+
+                
+
+            }
+
+            let empObject = {};
+
+            empObject.setAge = function (){
+                age =  newAge;
+            }
+
+            empObject.setName = function (){
+                age =  newName;
+            }
+            empObject.setSalary = function (){
+                age =  newSalary;
+            }
+
+            empObject.increaseSalary = function (){
+                return getSalary + (getSalary * percentage);
+            }
+            empObject.incrementAge = function() {
+
+                return getAge()+=1;
+
+            }
+
+            return empObject;
+
+            Employee.extension =  function (){
+                var address;
+                function setAddress(newAddress)
+                {
+                  address = newAddress;
+                }
+
+                function getAddress (){
+                    return address;
+                }
+
+                return{
+                    address:address,
+                    setAddress:setAddress,
+                    getAddress:getAddress
+                }
+            }
+
+        }();
+
+
+        
+        var cert = 5; // Initialize x
+        var cert3;
+        cert4 = 10;
+        console.log("demo");
+        console.log( cert + " " + cert4);
+        var cert2 = 7; // Initialize y
+        cert3 = 8;
+        //var cert4;
+
+        // function add() {
+        //     var counter = 0;
+        //     counter += 1;
+        //     return counter;
+        // }
+
+        var add =  (function () {
+
+            var counter = 0;
+            return function (){
+                return counter += 1;
+            }
+            
+           
+        })();
+        console.log(add()); console.log(add()); console.log(add());
+
+        
+
+        const promise = new Promise((resolve, reject) => {
+                        reject("Hattori");
+                    setTimeout(()=> reject("Yoshi"), 500);
+                }); 
+                
+        promise.then(val => alert("Success: "+ val))
+              .catch(e => alert("Error: " + e));
+
+
     </script>
 
     
