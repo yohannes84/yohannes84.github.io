@@ -39,7 +39,7 @@
         var a = 5; 
         var b = 10;
         var c = function(a, b, c) { 
-                    var x = 10; 
+                    
                     console.log(x); 
                     console.log(a); 
                     var f = function(a, b, c) 
@@ -51,6 +51,7 @@
                     } 
                     f(a,b,c); 
                     console.log(b);
+                    var x = 10;
         } 
         c(8,9,10); 
         console.log(b); 
@@ -178,14 +179,14 @@
 
                 increaseSalary: function(percentage)
                 {
-                return getSalary + (getSalary * percentage);
+                    setSalary(getSalary + (getSalary * percentage));
                 },
 
                 // uses private getSalary( )
-                //public method
+                //public methodgit
                 incrementAge: function  ( ){
 
-                    return getAge()+=1;
+                    setAge(getAge()+=1);
                     
                 } // uses private getAge(
 
@@ -274,7 +275,21 @@
                 
         promise.then(val => alert("Success: "+ val))
               .catch(e => alert("Error: " + e));
+                // promise
 
+                var giveMePizza=function(){
+                return new Promise (function (resolve,reject){
+                if(everythingWorks){
+                    resolve("This is true");// then() will be called
+                }
+                else{
+                    reject("This is false");// catch() will be called
+                }
+                })
+                }
+                giveMePizza().then(data=>console.log(data))
+                            .catch(err=>console.error(err));
+                console.log('I will run immediately after calling giveMePizz() and before any result arrives');
 
     </script>
 
