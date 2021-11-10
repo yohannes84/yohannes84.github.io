@@ -48,6 +48,8 @@ document.getElementById("bling").onchange = function decorateByCheckbox(){ // Jq
 
    if ($("#bling").prop("checked")){
 
+    //var x =  this.checked;
+
     document.getElementById("bigdecor").style.fontWeight = "bold";
     document.getElementById("bigdecor").style.color= "green";
     document.getElementById("bigdecor").style.textDecoration = "underline";

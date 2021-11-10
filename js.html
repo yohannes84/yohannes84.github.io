@@ -218,14 +218,12 @@
 
             return empObject;
 
-            Employee.extension =  function (){
+            Employee.setAddress =  function (newAddres){
                 var address;
-                function setAddress(newAddress)
-                {
-                  address = newAddress;
+                address = newAddress;
                 }
 
-                function getAddress (){
+                Employee.getAddress =function(){
                     return address;
                 }
 

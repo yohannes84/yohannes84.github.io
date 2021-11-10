@@ -10,11 +10,24 @@
 <h1>Shopping Cart</h1>
 <ul>
     <li> Shirt<button>Delete</button></li>
-    <li>Tie<button>Delete</button></li>
+    <li>Tie<button id="button">Delete</button></li>
     <li> Jacket<button>Delete</button></li>
     <li> Pants<button>Delete</button></li>
  
 </ul>
+<script>
+    (function(){
+        function deleteItem(){
+            var x = this.parentNode;
+            x.remove;
+
+
+        }
+    $(document).ready(function (){
+        $("#button").click("deleteItem()")
+    });
+})();
+</script>
 
     
 </body>
