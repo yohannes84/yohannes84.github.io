@@ -1,0 +1,97 @@
+.container{
+    margin: 20px auto;
+    /* border:2px solid blue; */
+    width: 80%;
+    padding: 25px 50px;
+    box-sizing: border-box;
+}
+h1{
+    margin-bottom: 0px;
+}
+#dictionary{
+  color:#612263;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#online{
+  color:black;
+  font-size: 46px;
+}
+h3{
+    font-style: italic;
+}
+
+#lblterm{
+
+  font-size: 26px;
+  color: #612263;
+
+}
+.search-box input{
+    width: 75%;
+    border: 1px solid rgb(119, 116, 116);
+    border-radius: 8px;
+    line-height: 32px;
+    padding: 4px 8px;
+    font-size: large;
+    vertical-align: middle;
+    
+
+}
+
+.search-box button{
+    width: 15%;
+    border: 0px;
+    border-radius: 8px;
+    line-height: 32px;
+    padding: 4px 8px;
+    font-weight: 600;
+    margin: 0px;
+    color: #fff;
+    background-color: #612263;
+    
+}
+
+.result-box{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px auto;
+    
+}
+
+.result-box p{
+  padding: 5px 0px;
+  
+}
+.number{
+  display: inline-block;
+  font-size: 16px;
+  color: #41a071;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-style: normal; 
+}
+.wordtype{
+  font-size: 14;
+  font-weight: bold;
+  font-style: oblique;
+}
+#loader{
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-size: medium;
+}
+
+#validate{
+  right:0px;
+  position: fixed;
+
+}
+
+#validate img{
+  width:88px;
+  height: 31px;
+
+}
