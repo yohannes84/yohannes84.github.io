@@ -1,0 +1,39 @@
+body h1,h2,h3,h4{
+    text-align: left;
+}
+
+
+
+fieldset{
+    border-radius: 5px;
+    padding: 5px;
+    /* background-color: #eeeeee; */
+    box-shadow: 1px 2px 2px 1px #dedada;
+    text-align: left;
+}
+
+fieldset legend {
+    background: #fff;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 2px 1px #8e8484;
+}
+
+fieldset p{
+    text-align: left;
+}
+
+.container {
+    width: 500px;
+    background-color: #fff;
+    padding: 0 20px 20px;
+    color: #626377;
+    margin: auto auto;
+}
+
+footer a, div.form-body a{
+    height: 24px;
+    display: inline-flex;
+    text-decoration: none;
+
+}

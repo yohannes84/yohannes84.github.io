@@ -1,0 +1,28 @@
+doctype html
+html(lang = "en") 
+head
+    title Number Quiz Application
+    link(rel='stylesheet', href='css/style.css')
+body
+div(class="container", id="quiz")
+    fieldset
+        legend NumberQuiz
+        form(method="POST", action="/")
+            h1(class="movie-title") The Number Quiz
+            div(class="form-body")
+                input(type="hidden", value=step, name="step")
+                input(type="hidden", value=score, name="score")
+           
+            p(class="score") Your current score is #{score}
+            if done
+                p(class ="score") You have completed the number quiz with a score of #{score} out of #{step}
+            else
+                p(class ="score") Guess the next number in the sequence
+                p #{numbers.sequence}
+                
+            label( for="txtinput") Your answer:
+            input(type="text", id = "txtinput" name ="txtinput" maxlength ="2" size ="6" indx ="0")
+            br
+            input(type="submit" id ="btnsubmit")
+
+    
